@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.child{
+    /* width: 200px; */
+    height: 200px;
+    background-color: yellow;
+}
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+
+}
+
+@media screen  and (max-width:600px){
+    .parent{
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+}
+
+@media screen  and (max-width:400px){
+    .parent{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* tornike */
+.imgParent{
+    width: 100%;
+    height: 150vh;
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto auto; */
+    gap: 20px;
+    grid-template-areas: 
+    "erti ori   sami"
+    "erti ori   sami"
+    "erti ori   sami"
+    "erti ori   sami"
+    "erti ori   sami"
+    "erti ori   sami"
+    "otxi ori   sami"
+    "otxi ori xuti"
+    "otxi eqvsi xuti"
+    "otxi eqvsi xuti"
+    "otxi eqvsi xuti"
+    "otxi eqvsi xuti"
+    ;
+}
+
+/* 12 nawili */
+.imgChild1{
+    background-color: yellow;
+    grid-area: erti;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+
+.imgChild2{
+    background-color: cadetblue;
+    grid-area: ori;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+.imgChild3{
+    background-color: pink;
+    grid-area: sami;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+
+.imgChild4{
+    background-color: burlywood;
+    grid-area: otxi;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+.imgChild5{
+    background-color: aquamarine;
+    grid-area: xuti;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+.imgChild6{
+    background-color: rgb(135, 45, 160);
+    grid-area: eqvsi;
+    background-image: url(./c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png);
+    background-size: cover;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    
+.imgParent{
+    height: 400vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; */
+    grid-template-areas: 
+
+    "erti ori"
+    "erti ori"
+    "erti ori"
+    "otxi ori"
+    "otxi ori"
+    "otxi eqvsi"
+    "otxi eqvsi"
+    "otxi eqvsi"
+    "otxi eqvsi"
+    "sami xuti"
+    "sami xuti"
+    "sami xuti"
+    "sami xuti"
+    "sami xuti"
+    "sami xuti"
+    "sami xuti"
+    !important;
+}
+}
+
+
+
+
+/* ////////////// giorgi */
+
+.granndPArent{
+    width: 100%;
+    height: 60vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+.giorgiParent{
+    width: 60%;
+    height: 60vh;
+    background-color: yellow;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "erti erti erti ori  ori  ori   ori"
+    "erti erti erti ori  ori  ori   ori"
+    "erti erti erti ori  ori  ori   ori"
+    "erti erti erti ori  ori  ori   ori"
+    "erti erti erti ori  ori  ori   ori"
+    "erti erti erti ori  ori  ori   ori"
+    "sami sami otxi ori  ori  ori   ori"
+    "sami sami otxi xuti xuti eqvsi eqvsi"
+    "sami sami otxi xuti xuti eqvsi eqvsi"
+    "sami sami otxi xuti xuti eqvsi eqvsi"
+    ;
+
+}
+
+
+.giorrgiChild1{
+    background-color: pink;
+    grid-area: erti;
+}
+.giorrgiChild2{
+    background-color: green;
+    grid-area: ori;
+}
+.giorrgiChild3{
+    background-color: blue;
+    grid-area: sami;
+}
+.giorrgiChild4{
+    background-color: red;
+    grid-area: otxi;
+}
+.giorrgiChild5{
+    background-color: aqua;
+    grid-area: xuti;
+}
+.giorrgiChild6{
+    background-color: cadetblue;
+    grid-area: eqvsi;
+}
